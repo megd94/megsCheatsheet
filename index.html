@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meg's CSS styling Cheatsheet</h1>
+    <h2>Learn how to use the most important CSS properties</h2>
+    <table> 
+        <thead><tr> <!-- Row 1 --> 
+          <th>CSS property</th> 
+          <th>Values</th> 
+          <th>Description</th> 
+        </tr> 
+    </thead>
+    <tbody>
+        <tr> <!-- Row 2 --> 
+          <td class="header">font-family</td>
+          <td class="values"><code>serif, sans serif, Garamond, 'Courier New', Helvetica </code></td> 
+          <td class="Description">There is an endless list of fonts. You can use Google fonts to pick the type of font you would like. You can then use a link in the HTML to the fonts or within the CSS. Always give a last option of 'serif' or 'sans serif' as a backup if no other fonts can render!</td> 
+        </tr> 
+        <tr> <!-- Row 3 --> 
+          <td class="header">font-size</td>
+          <td class="values"><code>10px, 2em, 3rem </code></td>
+          <td class="Description">There are default font sizes for h1, h2, p tags etc. However you can change this by specifying the font size. Using px will specify a specific size. Using em or rem will multiply the default size. E.g. 1.5em would be 1.5 X the normal size for that tag.</td>
+        </tr> 
+        <tr> <!-- Row 4 --> 
+          <td class="header">font-weight</td> 
+          <td class="values"><code>100 = thin, 200 = extra light, 300 = light, 400 = normal, 500 = medium, 600 = semi-bold, 700 = bold, 800 = extra bold.</code> </td>
+          <td class="Description">You can use either the numerical or written value for the weight property. By default the text is set to normal </td> 
+        </tr>
+        <tr> <!-- Row 5 --> 
+            <td class="header">background color</td>
+            <td class="values"><code>#FFFEEE, ivory, hsl(56, 100%, 97%), RGB(255, 254, 238)</code></td> 
+            <td class="Description">This is an example of one colour: ivory. You can either write 'ivory'. You can also use the # hex value. This uses letters to indicate how much of each colour is used. The HSL value uses: hue, saturation, lightness and sets each to a percentage to create the colour. Or you can use RGB which stands for red, green, blue and each colour is set to an amount out of 255. You can also add an 'a' on the end for alpha. This will then set the opacity for this we use between 0-0.1.</td> 
+          </tr> 
+          <tr> <!-- Row 6 --> 
+            <td class="header">Color</td>
+            <td class="values"><code>#FFFEEE, ivory, hsl(56, 100%, 97%), RGB(255, 254, 238)</code> </td>
+            <td class="Description">This is an example of one colour: ivory. You can either write 'ivory'. You can also use the # hex value. This uses letters to indicate how much of each colour is used. The HSL value uses: hue, saturation, lightness and sets each to a percentage to create the colour. Or you can use RGB which stands for red, green, blue and each colour is set to an amount out of 255. You can also add an 'a' on the end for alpha. This will then set the opacity for this we use between 0-0.1.</td>
+          </tr> 
+          <tr> <!-- Row 7 --> 
+            <td class="header">text-align</td> 
+            <td class="values"><code>left, right, center, justify, inherit</code></td>
+            <td class="Description">Self explanatory. This will align the text in whatever position we set. Inherit will be whatever the parent's element is. Justify spaces words out so that content starts at left edge and ends at the right edge.</td>
+          </tr>
+          <tr> <!-- Row 8 --> 
+            <td class="header">height</td>
+            <td class="values"><code>auto, 10px, 100px, 1.5em</code></td> 
+            <td class="Description">If auto the element will automatically adjust its height to allow its content to be displayed correctly. If (r)em then the content will times by however much, so 1.5em is 1.5 times the normal set height.</td> 
+          </tr> 
+          <tr> <!-- Row 9 --> 
+            <td class="header">width</td>
+            <td class="values"><code>auto, 10px, 100px, 1.5em</code></td>
+            <td class="Description">If auto the element will automatically adjust its height to allow its content to be displayed correctly. If (r)em then the content will times by howesver much, so 1.5em is 1.5 times the normal set width.</td>
+          </tr> 
+          <tr> <!-- Row 10 --> 
+            <td class="header">border</td> 
+            <td class="values"><code>1px, dotted, red, 5px, solid, black</code></td>
+            <td class="Description">Border is shorthand propery for: border-width, border-style (required), border-color. The options for the border style are: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit</td> 
+          </tr>
+          <tr> <!-- Row 11 --> 
+              <td class="header">border-radius</td>
+              <td class="values"><code>5%, 50%, 2em, 25px</code></td> 
+              <td class="Description">This allows us to round the edges of our boxes. Can use (r)em, px or %. If you use 50% it will create a circle</td> 
+            </tr> 
+            <tr> <!-- Row 12 --> 
+              <td class="header">padding</td>
+              <td class="values"><code>10px, 2em/ padding: 10 30px 40px 20px</code>/td>
+              <td class="Description">Padding is part of the box model. This is the space between the content and its border. Padding is shorthand for <code>padding-top, padding-bottom, padding-left, padding-right </code>. If set like <code>padding: 10px 20px; </code> The top and bottom will be 10px. The left and right 20px. </td>
+            </tr> 
+            <tr> <!-- Row 13 --> 
+              <td class="header">margin</td> 
+              <td class="values"><code>10px, 2em/ margin: 10px 20px 30px 40px</code></td>
+              <td class="Description">Margin is part of the box model. It sets the space between the edge of the page and the border of the box. Margin is shorthand for <code>margin-top, margin-bottom, margin-left, margin-right</code>. We can set <code>margin: 20px 30px;</code> To mean a 20px top and bottom, 30px left and right and so on.  </td>
+            </tr>
+            <tr> <!-- Row 14 --> 
+                <td class="header">overflow</td>
+                <td class="values"><code>Visible, hidden, scroll, auto</code></td> 
+                <td class="Description">The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area. If visible, the overflow is not clipped. The content renders outside the element's box. If hidden, the overflow is clipped, and the rest of the content will be invisible. If scroll the overflow is clipped, and a scrollbar is added to see the rest of the content. If auto - Similar to scroll, but it adds scrollbars only when necessary</td> 
+              </tr> 
+              <tr> <!-- Row 15 --> 
+                <td class="header">box-sizing</td>
+                <td class="values"><code>border-box</code></td>
+                <td class="Description">This property only has one value. If used padding and border will be included in the element's total width and height. This allows us to clearly set height and width, without havingt to calculat extra for padding or borders. It will take the space from within the content itself.</td>
+              </tr> 
+              <tr> <!-- Row 16--> 
+                <td class="header">position</td> 
+                <td class="values"><code>static, relative, fixed, absolute, sticky</code></td>
+                <td class="Description"><code>Static</code>is set as default. Elements are not affected by the top, bottom, left, and right properties. <code>relative;</code>is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.e.g. <code>position: relative; left; 30px</code>It will now be 30px away to the left from its normal position. <code>fixed</code> is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. Positon set by left, right etc properties again. Absolute is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).It is removed from normal flow, and can overlap elements. <code>Sticky</code> is positioned based on the user's scroll position.A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). Yet again uses left, right etc to set the positon where it wills stick.</td> 
+              </tr>
+              <tr> <!-- Row 17 --> 
+                  <td class="header">display</td>
+                  <td class="values"><code>none, inline, inline-block, block, grid, flex</code></td> 
+                  <td class="Description"><code>inline</code> keeps all content on one line.  Any height and width properties will have no effect. <code>inline-block</code>	Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values<code>block</code> displays an element as a block element It starts on a new line, and takes up the whole width. <code>grid</code> displays an element as a block-level grid container. <code>flex</code> displays an element as a block-level flex container </td> 
+                </tr> 
+                <tr> <!-- Row 18 --> 
+                  <td class="header">float</td>
+                  <td class="values"><code>left, right, none, inherit</code></td>
+                  <td class="Description">The <code>float</code> property is used for positioning and formatting content e.g. let an image float left to the text in a container.</td></tr> 
+                <tr> <!-- Row 19--> 
+                  <td class="header">clear</td> 
+                  <td class="values"><code>none, left, right, both, initial, inherit</code></td>
+                  <td class="Description">The <code>clear</code> property controls the flow next to floated elements. It specifies what should happen with the element that is next to a floating element. 
+                   <code>both</code> indicates it is pushed beneath both left and right floated elements. <code>initial</code> sets to default.  </td>
+                </tr>
+    </tbody>
+      </table>
+      <footer>
+          <div class="left">
+            <p>Created by Meg Daniel</p>
+            <p>For my CodeAcademy project</p>
+        </div>
+       <!--<div class="right">
+            <h3>Thanks to:</h3>
+            <ol>
+                <li>Loki</li>
+                <li>Ragnar</li>
+                <li>Erik</li>
+                <li>Adam</li>
+                <li>Fred</li>
+                <li>Rollo</li>
+            </ol>
+        </div> -->
+      </footer>
+</body>
+</html>
